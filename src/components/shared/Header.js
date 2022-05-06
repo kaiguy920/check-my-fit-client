@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/Navdropdown'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 const linkStyle = {
 	color: 'white',
@@ -27,7 +25,7 @@ const authenticatedOptions = (user) => (
 		</Nav.Item>
 		<Nav.Item className="nav-items m-2">
 			<Link to='sign-out' style={linkStyle}>
-				 Sign Out
+				Sign Out
 			</Link>
 		</Nav.Item>
 	</>
